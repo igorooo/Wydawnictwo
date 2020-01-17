@@ -1,4 +1,5 @@
 from sqlalchemy import *
+from sqlalchemy.orm import relationship
 from engine import Base
 
 class Uzytkownik(Base):
@@ -9,6 +10,7 @@ class Uzytkownik(Base):
     login = Column("Login", String(255), nullable=False)
     haslo = Column("Haslo", String(255), nullable=False)
     email = Column("Email", String(255), nullable=False)
+    kontrybutor = relationship("Artykul")
 
     def __init__(self, nazwa, login, haslo, email):
         self.nazwa = nazwa
@@ -20,8 +22,18 @@ class Kontrybutor(Uzytkownik):
     __mapper_args__ = {
         'polymorphic_identity':'Kontrybutor',
     }
-    id_pracownika = Column("idPracownika", Integer)
 
-    def __init__(self, nazwa, login, haslo, email, id_pracownika):
-        super(Kontrybutor, self).__init__(nazwa, login, haslo, email)
-        self.id_pracownika = id_pracownika
+class Recenzent(Kontrybutor):
+    __mapper_args__ = {
+        'polymorphic_identity':'Recenzent',
+    }
+
+class Redaktor(Recenzent):
+    __mapper_args__ = {
+        'polymorphic_identity':'Redaktor',
+    }
+
+class Administrator(Redaktor):
+    __mapper_args__ = {
+        'polymorphic_identity':'Administrator',
+    }
