@@ -11,6 +11,9 @@ class Uzytkownik(Base):
     haslo = Column("Haslo", String(255), nullable=False)
     email = Column("Email", String(255), nullable=False)
 
+    artykul = relationship('Artykul', backref='kontrybutor_backref')
+    recenzja = relationship('Recenzja', backref='kontrybutor_backref')
+
 
 
     def __init__(self, nazwa, login, haslo, email):
@@ -23,13 +26,11 @@ class Kontrybutor(Uzytkownik):
     __mapper_args__ = {
         'polymorphic_identity':'Kontrybutor',
     }
-    kontrybutor = relationship("Artykul")
 
 class Recenzent(Kontrybutor):
     __mapper_args__ = {
         'polymorphic_identity':'Recenzent',
     }
-    recenzent = relationship("Recenzja")
 
 class Redaktor(Recenzent):
     __mapper_args__ = {

@@ -27,9 +27,12 @@ class Zadanie(Base):
     id = Column("idZadanie", Integer, primary_key=True)
     grupa = Column("Grupa", ForeignKey('Grupa.idGrupa'), nullable=False)
     zakres = Column("Zakres", String(45), nullable=False)
-    artykul = Column("idArtykul", ForeignKey('Artykul.idArtykul'), nullable=False)
+    artykul_id = Column("idArtykul", Integer, ForeignKey('Artykul.idArtykul'), nullable=False)
     wykonano = Column("Wykonano", Boolean, nullable=True)
     rezultat = Column("Rezultat", Boolean, nullable=True)
+
+    artykul = relationship('Artykul')
+    grupa = relationship('Grupa')
 
     def __init__(self, grupa, zakres, artykul):
         self.grupa = grupa
@@ -41,9 +44,12 @@ class Recenzja(Base):
     """Recenzja"""
     __tablename__ = 'Recenzja'
     id = Column("idRecenzja", Integer, primary_key=True)
-    artykul = Column("idArtykul", ForeignKey('Artykul.idArtykul'), nullable=False)
+    artykul_id = Column("idArtykul", Integer, ForeignKey('Artykul.idArtykul'), nullable=False)
     tresc = Column("tresc", Binary, nullable=False)
-    recenzent = Column("Recenzent", ForeignKey('Recenzent.idUzytkownik'), nullable=False)
+    recenzent_id = Column("idRecenzent", ForeignKey('Uzytkownik.idUzytkownik'), nullable=False)
+
+    artykul = relationship('Artykul')
+    recenzent = relationship('Uzytkownik')
 
     def __init__(self, artykul, tresc, recenzent):
         self.artykul = artykul
@@ -76,6 +82,7 @@ class Grupa(Base):
         self.nazwa = nazwa
         self.weryfikanci = weryfikanci
         self.zadania = zadania
+
 
 def Kategoria(Base):
     """Kategoria"""
