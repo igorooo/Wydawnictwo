@@ -1,6 +1,4 @@
-from sqlalchemy import *
-from sqlalchemy.orm import relationship
-from engine import Base
+from engine import *
 
 class Uzytkownik(Base):
     """Klasa abstrakcyjna"""

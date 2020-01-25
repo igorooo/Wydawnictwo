@@ -2,41 +2,75 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60b6acc5-ea66-49fb-acf0-c932bfc3e6b6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/artykul.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/artykul.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objects.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uzytkownicy.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/uzytkownicy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Wydawnictwo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Wydawnictwo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wydawnictwo" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wydawnictwo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/artykul.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/artykul.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objects.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uzytkownicy.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/uzytkownicy.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="SQLite - Wydawnictwo" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="SQLite - Wydawnictwo" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="SQLite - Wydawnictwo" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1WnVjq0lTr7Gyv5CT15Fc5zrwhP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -51,6 +85,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -66,6 +101,23 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:SQLite - Wydawnictwo" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -76,18 +128,85 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579785483151</updated>
+      <workItem from="1579945853445" duration="12725000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="560" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579948288992">
+      <screen x="0" y="0" width="1920" height="1035" />
+    </state>
+    <state x="560" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1035/1920.0.1920.1080@0.0.1920.1035" timestamp="1579948288992" />
+    <state x="747" y="276" key="FileChooserDialogImpl" timestamp="1579948262170">
+      <screen x="0" y="0" width="1920" height="1035" />
+    </state>
+    <state x="747" y="276" key="FileChooserDialogImpl/0.0.1920.1035/1920.0.1920.1080@0.0.1920.1035" timestamp="1579948262170" />
+    <state width="1874" height="272" key="GridCell.Tab.0.bottom" timestamp="1579961076017">
+      <screen x="0" y="0" width="1920" height="1035" />
+    </state>
+    <state width="1874" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1035/1920.0.1920.1080@0.0.1920.1035" timestamp="1579961076017" />
+    <state width="1874" height="272" key="GridCell.Tab.0.center" timestamp="1579961076017">
+      <screen x="0" y="0" width="1920" height="1035" />
+    </state>
+    <state width="1874" height="272" key="GridCell.Tab.0.center/0.0.1920.1035/1920.0.1920.1080@0.0.1920.1035" timestamp="1579961076017" />
+    <state width="1874" height="272" key="GridCell.Tab.0.left" timestamp="1579961076017">
+      <screen x="0" y="0" width="1920" height="1035" />
+    </state>
+    <state width="1874" height="272" key="GridCell.Tab.0.left/0.0.1920.1035/1920.0.1920.1080@0.0.1920.1035" timestamp="1579961076017" />
+    <state width="1874" height="272" key="GridCell.Tab.0.right" timestamp="1579961076017">
+      <screen x="0" y="0" width="1920" height="1035" />
+    </state>
+    <state width="1874" height="272" key="GridCell.Tab.0.right/0.0.1920.1035/1920.0.1920.1080@0.0.1920.1035" timestamp="1579961076017" />
+    <state width="1874" height="336" key="GridCell.Tab.1.bottom" timestamp="1579960761103">
+      <screen x="0" y="0" width="1920" height="1035" />
+    </state>
+    <state width="1874" height="336" key="GridCell.Tab.1.bottom/0.0.1920.1035/1920.0.1920.1080@0.0.1920.1035" timestamp="1579960761103" />
+    <state width="1874" height="336" key="GridCell.Tab.1.center" timestamp="1579960761103">
+      <screen x="0" y="0" width="1920" height="1035" />
+    </state>
+    <state width="1874" height="336" key="GridCell.Tab.1.center/0.0.1920.1035/1920.0.1920.1080@0.0.1920.1035" timestamp="1579960761103" />
+    <state width="1874" height="336" key="GridCell.Tab.1.left" timestamp="1579960761103">
+      <screen x="0" y="0" width="1920" height="1035" />
+    </state>
+    <state width="1874" height="336" key="GridCell.Tab.1.left/0.0.1920.1035/1920.0.1920.1080@0.0.1920.1035" timestamp="1579960761103" />
+    <state width="1874" height="336" key="GridCell.Tab.1.right" timestamp="1579960761103">
+      <screen x="0" y="0" width="1920" height="1035" />
+    </state>
+    <state width="1874" height="336" key="GridCell.Tab.1.right/0.0.1920.1035/1920.0.1920.1080@0.0.1920.1035" timestamp="1579960761103" />
+    <state width="235" height="500" key="HiddenNamespacesPopup" timestamp="1579948298044">
+      <screen x="0" y="0" width="1920" height="1035" />
+    </state>
+    <state width="235" height="500" key="HiddenNamespacesPopup/0.0.1920.1035/1920.0.1920.1080@0.0.1920.1035" timestamp="1579948298044" />
+    <state x="461" y="153" key="SettingsEditor" timestamp="1579946551239">
+      <screen x="0" y="0" width="1920" height="1035" />
+    </state>
+    <state x="461" y="153" key="SettingsEditor/0.0.1920.1035/1920.0.1920.1080@0.0.1920.1035" timestamp="1579946551239" />
+    <state x="844" y="199" width="332" height="637" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1579960062522">
+      <screen x="0" y="0" width="1920" height="1035" />
+    </state>
+    <state x="844" y="199" width="332" height="637" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1035/1920.0.1920.1080@0.0.1920.1035" timestamp="1579960062522" />
+    <state x="646" y="346" key="com.intellij.ide.util.TipDialog" timestamp="1579945860531">
+      <screen x="0" y="0" width="1920" height="1035" />
+    </state>
+    <state x="646" y="346" key="com.intellij.ide.util.TipDialog/0.0.1920.1035/1920.0.1920.1080@0.0.1920.1035" timestamp="1579945860531" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Wydawnictwo$main.coverage" NAME="main Coverage Results" MODIFIED="1579961076001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
 </project>

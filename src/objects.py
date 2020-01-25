@@ -1,8 +1,5 @@
-import enum
-from sqlalchemy import *
-from engine import Base
-from artykul import *
-from uzytkownicy import *
+from engine import *
+
 
 
 class Autor(Base):
@@ -25,7 +22,7 @@ class Zadanie(Base):
     """Zadanie"""
     __tablename__ = 'Zadanie'
     id = Column("idZadanie", Integer, primary_key=True)
-    grupa = Column("Grupa", ForeignKey('Grupa.idGrupa'), nullable=False)
+    grupa_id = Column("idGrupa", Integer, ForeignKey('Grupa.idGrupa'), nullable=False)
     zakres = Column("Zakres", String(45), nullable=False)
     artykul_id = Column("idArtykul", Integer, ForeignKey('Artykul.idArtykul'), nullable=False)
     wykonano = Column("Wykonano", Boolean, nullable=True)
@@ -45,7 +42,7 @@ class Recenzja(Base):
     __tablename__ = 'Recenzja'
     id = Column("idRecenzja", Integer, primary_key=True)
     artykul_id = Column("idArtykul", Integer, ForeignKey('Artykul.idArtykul'), nullable=False)
-    tresc = Column("tresc", Binary, nullable=False)
+    tresc = Column("tresc", String(255), nullable=False)
     recenzent_id = Column("idRecenzent", ForeignKey('Uzytkownik.idUzytkownik'), nullable=False)
 
     artykul = relationship('Artykul')
@@ -63,34 +60,29 @@ weryfikanci_table = Table(
     Column('idGrupa', Integer, ForeignKey('Grupa.idGrupa'))
 )
 
-zadania_table = Table(
-    'Zadania', Base.metadata,
-    Column('idZadanie', Integer, ForeignKey('Zadanie.idZadanie')),
-    Column('idGrupa', Integer, ForeignKey('Grupa.idGrupa'))
-)
-
 class Grupa(Base):
     """Grupa"""
     __tablename__ = 'Grupa'
     id = Column("idGrupa", Integer, primary_key=True)
     nazwa = Column("Nazwa", String(45), nullable=False)
-    weryfikanci = relationship("Uzytkownik", secondary=weryfikanci_table)
-    zadania = relationship("Zadanie", secondary=zadania_table)
+
+    weryfikanci = relationship("Uzytkownik", secondary=weryfikanci_table, backref=backref('grupy_weryfikacji', lazy='dynamic'))
+    zadania = relationship('Zadanie', backref='grupa_weryfikacjyna')
 
 
-    def __init__(self, nazwa, weryfikanci, zadania):
+    def __init__(self, nazwa):
         self.nazwa = nazwa
-        self.weryfikanci = weryfikanci
-        self.zadania = zadania
 
 
-def Kategoria(Base):
+
+class Kategoria(Base):
     """Kategoria"""
     __tablename__ = 'Kategoria'
     id = Column("idKategoria", Integer, primary_key=True)
-    nazwa = Column("idArtykul", String(45), nullable=False)
-    opis = Column("idArtykul", String(255), nullable=False)
+    nazwa = Column("Nazwa", String(45), nullable=False)
+    opis = Column("Opis", String(255), nullable=False)
 
+    artykul = relationship('Artykul')
 
     def __init__(self, nazwa, opis):
         self.nazwa = nazwa
