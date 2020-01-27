@@ -8,11 +8,15 @@ class Uzytkownik(Base):
     login = Column("Login", String(255), nullable=False)
     haslo = Column("Haslo", String(255), nullable=False)
     email = Column("Email", String(255), nullable=False)
+    type_id = Column("Type", Integer)
 
     artykul = relationship('Artykul', backref='kontrybutor_backref')
     recenzja = relationship('Recenzja', backref='kontrybutor_backref')
 
-
+    __mapper_args__ = {
+        'polymorphic_on': type_id,
+        'polymorphic_identity': 'Uzytkownik'
+    }
 
     def __init__(self, nazwa, login, haslo, email):
         self.nazwa = nazwa

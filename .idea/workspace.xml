@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60b6acc5-ea66-49fb-acf0-c932bfc3e6b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Wydawnictwo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Wydawnictwo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Wydawnictwo" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wydawnictwo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/artykul.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/artykul.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/objects.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/objects.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uzytkownicy.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/uzytkownicy.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +42,13 @@
     </expand>
     <select />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -72,7 +71,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.query">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Wydawnictwo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -95,8 +94,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="query" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Wydawnictwo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/query.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.query" />
         <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
@@ -106,12 +128,7 @@
       <list>
         <serviceView>
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:SQLite - Wydawnictwo" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -128,7 +145,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579785483151</updated>
-      <workItem from="1579945853445" duration="12725000" />
+      <workItem from="1579945853445" duration="13618000" />
+      <workItem from="1580079252376" duration="4173000" />
     </task>
     <servers />
   </component>
@@ -157,22 +175,22 @@
       <screen x="0" y="0" width="1920" height="1035" />
     </state>
     <state x="747" y="276" key="FileChooserDialogImpl/0.0.1920.1035/1920.0.1920.1080@0.0.1920.1035" timestamp="1579948262170" />
-    <state width="1874" height="272" key="GridCell.Tab.0.bottom" timestamp="1579961076017">
+    <state width="1874" height="272" key="GridCell.Tab.0.bottom" timestamp="1580083689746">
       <screen x="0" y="0" width="1920" height="1035" />
     </state>
-    <state width="1874" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1035/1920.0.1920.1080@0.0.1920.1035" timestamp="1579961076017" />
-    <state width="1874" height="272" key="GridCell.Tab.0.center" timestamp="1579961076017">
+    <state width="1874" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1035/1920.0.1920.1080@0.0.1920.1035" timestamp="1580083689746" />
+    <state width="1874" height="272" key="GridCell.Tab.0.center" timestamp="1580083689745">
       <screen x="0" y="0" width="1920" height="1035" />
     </state>
-    <state width="1874" height="272" key="GridCell.Tab.0.center/0.0.1920.1035/1920.0.1920.1080@0.0.1920.1035" timestamp="1579961076017" />
-    <state width="1874" height="272" key="GridCell.Tab.0.left" timestamp="1579961076017">
+    <state width="1874" height="272" key="GridCell.Tab.0.center/0.0.1920.1035/1920.0.1920.1080@0.0.1920.1035" timestamp="1580083689745" />
+    <state width="1874" height="272" key="GridCell.Tab.0.left" timestamp="1580083689745">
       <screen x="0" y="0" width="1920" height="1035" />
     </state>
-    <state width="1874" height="272" key="GridCell.Tab.0.left/0.0.1920.1035/1920.0.1920.1080@0.0.1920.1035" timestamp="1579961076017" />
-    <state width="1874" height="272" key="GridCell.Tab.0.right" timestamp="1579961076017">
+    <state width="1874" height="272" key="GridCell.Tab.0.left/0.0.1920.1035/1920.0.1920.1080@0.0.1920.1035" timestamp="1580083689745" />
+    <state width="1874" height="272" key="GridCell.Tab.0.right" timestamp="1580083689746">
       <screen x="0" y="0" width="1920" height="1035" />
     </state>
-    <state width="1874" height="272" key="GridCell.Tab.0.right/0.0.1920.1035/1920.0.1920.1080@0.0.1920.1035" timestamp="1579961076017" />
+    <state width="1874" height="272" key="GridCell.Tab.0.right/0.0.1920.1035/1920.0.1920.1080@0.0.1920.1035" timestamp="1580083689746" />
     <state width="1874" height="336" key="GridCell.Tab.1.bottom" timestamp="1579960761103">
       <screen x="0" y="0" width="1920" height="1035" />
     </state>
@@ -197,16 +215,17 @@
       <screen x="0" y="0" width="1920" height="1035" />
     </state>
     <state x="461" y="153" key="SettingsEditor/0.0.1920.1035/1920.0.1920.1080@0.0.1920.1035" timestamp="1579946551239" />
-    <state x="844" y="199" width="332" height="637" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1579960062522">
+    <state x="844" y="199" width="332" height="637" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1580083627396">
       <screen x="0" y="0" width="1920" height="1035" />
     </state>
-    <state x="844" y="199" width="332" height="637" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1035/1920.0.1920.1080@0.0.1920.1035" timestamp="1579960062522" />
+    <state x="844" y="199" width="332" height="637" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1035/1920.0.1920.1080@0.0.1920.1035" timestamp="1580083627396" />
     <state x="646" y="346" key="com.intellij.ide.util.TipDialog" timestamp="1579945860531">
       <screen x="0" y="0" width="1920" height="1035" />
     </state>
     <state x="646" y="346" key="com.intellij.ide.util.TipDialog/0.0.1920.1035/1920.0.1920.1080@0.0.1920.1035" timestamp="1579945860531" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Wydawnictwo$main.coverage" NAME="main Coverage Results" MODIFIED="1579961076001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Wydawnictwo$main.coverage" NAME="main Coverage Results" MODIFIED="1580083685363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Wydawnictwo$query.coverage" NAME="query Coverage Results" MODIFIED="1580083689729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
 </project>
