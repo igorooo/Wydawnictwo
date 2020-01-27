@@ -8,11 +8,28 @@ from artykul import *
     Plik na zapytania 
 """
 
-# Przykladowy JOIN
-query = session.query(Artykul, Uzytkownik).filter(Artykul.kontrybutor_id == Uzytkownik.id).all()
+"""
+    Zapytanie o artykuły posiadające podany tag
+"""
+query = session.query(Artykul, Tag).join(Artykul.tagi).filter(Tag.tag == 'technologia')
 
-for c, i in query:
-    print(c.nazwa, i.nazwa)
+for c, t in query:
+    print(c.nazwa)
+
+
+"""
+    Zapytanie o artykuły dodane przez użytkownika o imieniu Toamsz Kowalski i loginie 'kowalski'
+"""
+query = session.query(Artykul, Uzytkownik).join(Artykul.kontrybutor).filter(Uzytkownik.nazwa == 'Tomasz Kowalski')\
+                                                                    .filter(Uzytkownik.login == 'kowalski')
+
+for c, t in query:
+    print(c.nazwa)
+
+
+
+
+
 
 
 

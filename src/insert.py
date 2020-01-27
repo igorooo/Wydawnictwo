@@ -32,3 +32,4 @@ artykul2.dodaj_tag("uczenie_maszynowe")
 artykul2.dodaj_tag("medycyna")
 
 session.commit()
+
