@@ -54,9 +54,9 @@ print(query)
 """
 
 
-q = session.query(Recenzent).join(weryfikanci_table).filter(weryfikanci_table.c.idGrupa == 4)
+q = session.query(Recenzent).join(weryfikanci_table).filter(weryfikanci_table.c.idGrupa == 1)
 
-print("---------- Recenzencie wchodzący w skład grupy weryfikacyjnej o podanym id:")
+print("---------- Recenzencie wchodzący w skład grupy weryfikacyjnej o podanym id: ")
 for r in q:
     print(r.nazwa)
 
