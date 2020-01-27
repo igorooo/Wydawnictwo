@@ -1,5 +1,5 @@
 from engine import *
-
+from uzytkownicy import Recenzent
 
 
 class Autor(Base):
@@ -36,6 +36,21 @@ class Zadanie(Base):
         self.zakres = zakres
         self.artykul = artykul
 
+    def wykonaj(self, rezultat: bool):
+        if self.wykonano:
+            return false
+        self.rezultat = rezultat
+        return true
+
+    def ponow(self):
+        if not self.wykonano:
+            return false
+        z = Zadanie(self.grupa, self.zakres, self.artykul)
+        session.add(z)
+        session.commit()
+        session.flush()
+        return true
+
 
 class Recenzja(Base):
     """Recenzja"""
@@ -60,6 +75,7 @@ weryfikanci_table = Table(
     Column('idGrupa', Integer, ForeignKey('Grupa.idGrupa'))
 )
 
+
 class Grupa(Base):
     """Grupa"""
     __tablename__ = 'Grupa'
@@ -69,10 +85,21 @@ class Grupa(Base):
     weryfikanci = relationship("Uzytkownik", secondary=weryfikanci_table, backref=backref('grupy_weryfikacji', lazy='dynamic'))
     zadania = relationship('Zadanie', backref='grupa_weryfikacjyna')
 
-
     def __init__(self, nazwa):
         self.nazwa = nazwa
 
+    def dodaj_weryfikanta(self, weryfikant: Recenzent):
+        self.weryfikanci.append(weryfikant)
+        session.add(self)
+        session.commit()
+        session.flush()
+
+    def podaj_sklad(self):
+        q = session.query(Recenzent, weryfikanci_table).join(Recenzent.id).filter(weryfikanci_table.idGrupa == self.id)
+        output = []
+        for r, w in q:
+            output.append(r.nazwa)
+        return output
 
 
 class Kategoria(Base):

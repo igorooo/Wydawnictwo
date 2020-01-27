@@ -16,6 +16,11 @@ referowanie_table = Table(
     Column('idArtykulReferowany', Integer, ForeignKey('Artykul.idArtykul'))
 )
 
+
+class Wersja(object):
+    pass
+
+
 class Artykul(Base):
     """Artykul"""
     __tablename__ = 'Artykul'
@@ -47,6 +52,11 @@ class Artykul(Base):
     def dodaj_tag(self, tagStr):
         tag = Tag(self, tagStr)
         self.tagi.append(tag)
+
+    def dodaj_wersje(self, w: Wersja):
+        # TODO: Implementacja metody
+
+        return false
 
 
 class Wersja(Base):
