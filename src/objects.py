@@ -1,5 +1,5 @@
 from engine import *
-from uzytkownicy import Recenzent
+
 
 
 class Autor(Base):
@@ -36,7 +36,7 @@ class Zadanie(Base):
         self.zakres = zakres
         self.artykul = artykul
 
-    def wykonaj(self, rezultat: bool):
+    def wykonaj(self, rezultat):
         if self.wykonano:
             return false
         self.rezultat = rezultat
@@ -88,18 +88,13 @@ class Grupa(Base):
     def __init__(self, nazwa):
         self.nazwa = nazwa
 
-    def dodaj_weryfikanta(self, weryfikant: Recenzent):
+    def dodaj_weryfikanta(self, weryfikant):
         self.weryfikanci.append(weryfikant)
         session.add(self)
         session.commit()
         session.flush()
 
-    def podaj_sklad(self):
-        q = session.query(Recenzent, weryfikanci_table).join(Recenzent.id).filter(weryfikanci_table.idGrupa == self.id)
-        output = []
-        for r, w in q:
-            output.append(r.nazwa)
-        return output
+
 
 
 class Kategoria(Base):
